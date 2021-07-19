@@ -42,8 +42,7 @@
 			<option value="cumilla">Cumilla</option>
 			<option value="mymensingh">Mymensingh </option>
 			<option value="rajshahi">Rajshahi</option>
-			<option value="khulna">
-Khulna</option>
+			<option value="khulna">Khulna</option>
 			<option value="chattagram">Chattagram</option>
 			<option value="sylhet">Sylhet</option>
 		</select>
@@ -82,8 +81,8 @@ Khulna</option>
 		<span class="error">*<?php echo $cpasswordErr;?> </span>
 		<br><br>
 
-
 		<button type="submit"name="submit" value="">SIGN-UP</button></div>
+		<br>
 		Already a user? Sign-in <a href="signin.php">here</a>
 		
 	</form>

@@ -18,7 +18,6 @@
 </head>
 <body>
 <div>
-
  	   <h3 style="color: red; background-color: yellow;" align="center">Shop</h3>
  </div>
 
@@ -35,11 +34,11 @@
 	<tbody>
 		<?php foreach ($products as $i => $product): ?>
 			<tr>
+                <td><?php echo $product['ID'] ?> </td>
 				<td><a href="show-product.php?id=<?php echo $product['ID'] ?>" >
-                <?php echo $product['ID'] ?></a> </td>
-				<td><?php echo $product['Name'] ?></td>
+				<?php echo $product['Name'] ?> </a> </td>
 				<td><?php echo $product['Sell_Price'] ?></td>
-				<td><?php echo $product['image'] ?></td>
+				<!--<td><?php // echo $product['image'] ?></td>-->
                 <td><img width="100px" src="uploads/<?php echo $product['image'] ?>" alt="<?php echo $product['Name'] ?>"></td>
 				<td><a href="add-to-cart.php?id=<?php echo $product['ID'] ?>">Add to cart</td>
 			</tr>
