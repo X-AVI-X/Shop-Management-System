@@ -48,11 +48,11 @@ function searchProduct($id){
 function addProduct($data){
 	$conn = db_conn();
     $selectQuery = "INSERT into product (Name, Buy_Price, Sell_Price, image)
-VALUES (:name, :Buy_Price, :Sell_Price, :image)";
+VALUES (:Name, :Buy_Price, :Sell_Price, :image)";
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
-        	':name' => $data['name'],
+        	':Name' => $data['Name'],
         	':Buy_Price' => $data['Buy_Price'],
         	':Sell_Price' => $data['Sell_Price'],
         	':image' => $data['image']
@@ -95,3 +95,24 @@ function deleteProduct($id){
 
     return true;
 }
+function registration(){
+    $conn = db_conn();
+     $selectQuery = "INSERT INTO registration (name, email, username, password, gender)
+          VALUES (:name, :email, :username, :password, :gender)"; 
+          try{
+            $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([
+            ':name' => $data['name'],
+            ':email' => $data['email'],
+            ':username' => $data['uname'],
+            ':password' => $data['password'],
+            ':gender' => $data['gender']
+            
+        ]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+     $conn = null;
+
+    return true;
+          }
