@@ -49,17 +49,17 @@
 
 		<br><br>
 		<label for="fname">Present Address:</label>
-		<input type="text" id="paddress" name="paddress">
+		<input type="text" id="paddress" name="paddress"value="<?php echo $paddress;?>">
 
 		<br><br>
 
 
 		<label for="lname">Permanet Address:</label>
-		<input type="text" id="peraddress" name="peraddress">
+		<input type="text" id="peraddress" name="peraddress"value="<?php echo $peraddress;?>">
 
 		<br><br>
 		 <label for="Phone">Phone Number: </label>
-		<input type="text" name="phone" required="+">
+		<input type="text" name="phone" required="+"value="<?php echo $phone;?>">
 		<br><br>
 
 

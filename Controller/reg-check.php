@@ -1,7 +1,9 @@
 <?php
 
+require_once '../Model/model.php';
+
 $nameErr = $emailErr = $unameErr = $genderErr = $passwordErr = $cpasswordErr = $error = "";
-$name = $email = $uname  = $gender = $password = $cpassword = $success = "";
+$name = $email = $uname  = $gender = $password = $cpassword = $success = $paddress = $peraddress=$phone="";
 
 
 
@@ -115,7 +117,10 @@ if (isset($_POST['submit']))
         $gender = $_POST["gender"];
     }
 
-  
+    $peraddress= $_POST['peraddress'];
+    $paddress = $_POST['paddress'];
+    $phone = $_POST['phone'];
+
 
     if(file_exists('../Model/data.json'))  
     {  
@@ -155,22 +160,44 @@ if (isset($_POST['submit']))
                             'gender' =>     $gender,  
                             'peraddress' => $_POST['peraddress'],
                             'paddress'=>$_POST['paddress'],
-                            'city'=>$_POST['paddress'],
+                            'city'=>$_POST['city'],
                             'phone'=> $_POST['phone']
-                           );   
+                           );  
 
-            $array_data[] = $extra;  
-            $final_data = json_encode($array_data, JSON_PRETTY_PRINT);  
-            if(file_put_contents('../Model/data.json', $final_data))  
-            {  
-                $success = "Registration successful";
-                header("location:../View/signin.php");
-            }    
-               else  
-               {  
-                $error = "JSON File doesn't exits";  
-               }
+        //send data to database    [start].................
+
+        $data['name'] = $name;
+        $data['gender'] = $gender;
+        $data['city'] = $_POST['city'];
+        $data['paddress'] = $_POST['paddress'];
+        $data['peraddress'] = $_POST['peraddress'];
+        $data['phone'] = $_POST['phone'];
+        $data['uname'] = $uname;
+        $data['password'] = $password;
+        $data['email'] = $email;
+
+        if (registration($data)) {
+            echo 'Successfully added!!';
+        }
+        //send data to database   [end]...................
+
+        $array_data[] = $extra;  
+        $final_data = json_encode($array_data, JSON_PRETTY_PRINT);  
+        if(file_put_contents('../Model/data.json', $final_data))  
+        {  
+            $success = "Registration successful";
+            header("location:../View/signin.php");
+        }    
+           else  
+           {  
+            $error = "JSON File doesn't exits";  
+           }
         }
     }
 }
+
+
+
+
+
 ?>

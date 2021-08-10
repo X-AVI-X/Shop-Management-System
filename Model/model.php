@@ -52,7 +52,7 @@ VALUES (:Name, :Buy_Price, :Sell_Price, :image)";
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
-        	':Name' => $data['Name'],
+        	':Name' => $data['name'],
         	':Buy_Price' => $data['Buy_Price'],
         	':Sell_Price' => $data['Sell_Price'],
         	':image' => $data['image']
@@ -95,24 +95,30 @@ function deleteProduct($id){
 
     return true;
 }
-function registration(){
-    $conn = db_conn();
-     $selectQuery = "INSERT INTO registration (name, email, username, password, gender)
-          VALUES (:name, :email, :username, :password, :gender)"; 
-          try{
-            $stmt = $conn->prepare($selectQuery);
+
+
+//user registration
+function registration($data){
+	$conn = db_conn();
+    $selectQuery = "INSERT into user_info (uname, name, gender, city, paddress, peraddress, phone, password, email)
+VALUES (:uname, :name, :gender, :city, :paddress, :peraddress, :phone, :password, :email)";
+    try{
+        $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
-            ':name' => $data['name'],
-            ':email' => $data['email'],
-            ':username' => $data['uname'],
-            ':password' => $data['password'],
-            ':gender' => $data['gender']
-            
+        	':name' => $data['name'],
+        	':gender' => $data['gender'],
+            ':city' => $data['city'],
+            ':paddress' => $data['paddress'],
+            ':peraddress' => $data['peraddress'],
+            ':phone' => $data['phone'],
+        	':uname' => $data['uname'],
+        	':password' => $data['password'],
+            ':email' => $data['email']
         ]);
     }catch(PDOException $e){
         echo $e->getMessage();
     }
-     $conn = null;
-
+    
+    $conn = null;
     return true;
-          }
+}

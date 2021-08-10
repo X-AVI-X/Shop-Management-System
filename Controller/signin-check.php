@@ -1,5 +1,5 @@
 <?php
-
+require_once '../Model/mysqli-model.php';
 $error = $success =  "";
 $uname = $password = "";
 
@@ -15,6 +15,28 @@ if (isset($_POST['submit']))
     {
         $uname = $_POST["uname"];
         $password = $_POST["password"]; 
+        
+        if(login($uname, $password))
+        {
+            $success = "Login successful";
+                $_SESSION['uname'] = $uname;
+                $_SESSION['password'] = $password;
+                $_SESSION['name'] = $_SESSION['row']['name'];
+                header("location:home.php");
+                if(empty($success))
+                {
+                    $error = "Invalid username/password";
+                }
+                else
+                {
+                    $error = "";
+                }
+        }else
+        {
+            $error = "Invalid Username/Password";
+        }
+
+        /*
         $data = file_get_contents("../Model/data.json");  
         $data = json_decode($data, true);  
                 
@@ -41,7 +63,9 @@ if (isset($_POST['submit']))
             {
                 $error = "Invalid Username/Password";
             }
+            
         }
+        */
     }
 
     if(empty($_POST["remindMe"]))
@@ -55,4 +79,5 @@ if (isset($_POST['submit']))
         setcookie ("password",$_POST["password"],time()+ 100);
     } 
 }
+
 ?>
