@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	    <style>
-.error {color: red;}
-.success {color: green;}
-</style>
+<link rel="stylesheet" href="../style.css">
 	<title>Forgetpassword</title>
 
     <?php include_once 'h1.php' ?>
@@ -32,7 +29,7 @@
 				</tr>
 			</table>
 			<br>
-			<input type="submit" name="submit" value="Submit"> Go to <a href="home.php">Sign in</a>
+			<input type="submit" name="submit" value="Submit"> Go to <a href="home-customer.php">Sign in</a>
 		</form> 
 	</fieldset>
 

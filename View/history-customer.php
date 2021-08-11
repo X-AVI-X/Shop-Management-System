@@ -8,12 +8,12 @@
     <title>History</title>
 
     <?php include_once ('./header.php'); ?>
-    <?php include_once ('../Controller/history-check.php'); ?>
+    <?php include_once ('../Controller/history-customer-check.php'); ?>
 
 </head>
 <body>
 <div>
- 	   <h3 style="color: red; background-color: yellow;" align="center">History</h3>
+ 	   <h3 class="title">History</h3>
  </div>
 </body>
 </html>

@@ -6,13 +6,13 @@
 
 	<?php include_once 'h1.php' ?>
  	<?php include_once '../Controller/reg-check.php' ?>
-
+	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
- <h3 style="color: red; background-color: yellow;" align="center">Please fill-up the all info </h3>
+ <h3 class="title">Please fill-up the all info </h3>
 	<fieldset > 
 			<legend align="center" ><h2><u>Registration From</u></h2></legend>
-      <div align="center">
+      <div class="reg">
 		<form action="reg.php" method="POST" autocomplete="off" novalidate>
 
 		<label for="name"> Name:</label>
@@ -53,7 +53,6 @@
 
 		<br><br>
 
-
 		<label for="lname">Permanet Address:</label>
 		<input type="text" id="peraddress" name="peraddress"value="<?php echo $peraddress;?>">
 
@@ -61,7 +60,6 @@
 		 <label for="Phone">Phone Number: </label>
 		<input type="text" name="phone" required="+"value="<?php echo $phone;?>">
 		<br><br>
-
 
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" value="<?php echo $email;?>">

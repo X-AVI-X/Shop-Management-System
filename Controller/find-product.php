@@ -14,5 +14,6 @@ if (isset($_POST['findProduct'])) {
         echo $ex->getMessage();
     }
 }
+echo "<br>";
+include_once '../View/footer.php';
 ?>
-

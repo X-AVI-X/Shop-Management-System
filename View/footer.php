@@ -7,7 +7,7 @@
 	<title>footer</title>
 </head>
 <body>
-	<footer style="border: 1px solid black ; width: 100%; height: 50px; background-color: black; ">
+	<footer class="footer">
 	<p align="center" style="color: gray;">Coyright&copy;
 	 2021|E-Shop.com
 	</p>

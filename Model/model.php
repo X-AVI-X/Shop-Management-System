@@ -32,7 +32,7 @@ function showProduct($id){
 
 function searchProduct($id){
     $conn = db_conn();
-    $selectQuery = "SELECT * FROM `product` WHERE ID LIKE '%$id%'";
+    $selectQuery = "SELECT * FROM `product` WHERE ID LIKE '%$id%' OR Name like '%$id%'";
 
     
     try{

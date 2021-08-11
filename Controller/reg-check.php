@@ -173,7 +173,7 @@ if (isset($_POST['submit']))
         $data['peraddress'] = $_POST['peraddress'];
         $data['phone'] = $_POST['phone'];
         $data['uname'] = $uname;
-        $data['password'] = $password;
+        $data['password'] = md5($password); //md5 hashing here
         $data['email'] = $email;
 
         if (registration($data)) {

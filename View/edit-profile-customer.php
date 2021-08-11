@@ -7,7 +7,8 @@
 <head>
 	<title>My Profile</title>
   <?php include_once 'header.php' ?>
-  <?php include_once ('../Controller/edit-profile-check.php'); ?>
+  <?php include_once ('../Controller/edit-profile-customer-check.php'); ?>
+  <link rel="stylesheet" href="../style.css">
 	<style>
 table {
   font-family: arial, sans-serif;
@@ -28,11 +29,11 @@ td, th {
 <body>
  
  <div>
- 	   <h3 style="color: red; background-color: yellow;" align="center">My Profile</h3>
+ 	   <h3 class="title">My Profile</h3>
  </div>
 
  <table>
-  <form action='../Controller/edit-profile-check.php' method="POST">
+  <form action='../Controller/edit-profile-customer-check.php' method="POST">
   
   <tr>
       <td><b>Name</b></td>

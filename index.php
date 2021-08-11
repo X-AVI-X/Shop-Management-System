@@ -1,1 +1,1 @@
-<?php header('Location:./View/home.php'); ?>
+<?php header('Location:./View/home-customer.php'); ?>

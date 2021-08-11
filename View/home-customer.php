@@ -9,13 +9,13 @@
 </head>
 
 <body>
-   <h3 style="color: red; background-color: yellow;" align="center">Home</h3>
+   <h3 class="title">Home</h3>
    <!--nav sec strt here--> 
    <div class="nav">
       <div class="wraper">
          <div class="nav-bar">
             <ul>
-               <li><a href="../View/home.php">Home</a></li>
+               <li><a href="../View/home-customer.php">Home</a></li>
                <li><a href="./shop.php">Shop | Browse Items</a></li>
                <li><a href="./cart.php">Cart</a></li>
                <li><a href="./contact-us.php">Contact us</a></li>

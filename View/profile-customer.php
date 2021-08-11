@@ -3,8 +3,10 @@
 <head>
 	<title>My Profile</title>
   <?php include_once 'header.php' ?>
-  <?php include_once ('../Controller/profile-check.php'); ?>
+  <?php include_once ('../Controller/profile-customer-check.php'); ?>
+  <link rel="stylesheet" href="../style.css">
 	<style>
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -24,10 +26,10 @@ td, th {
 <body>
  
  <div>
- 	   <h3 style="color: red; background-color: yellow;" align="center">My Profile</h3>
+ 	   <h3 class="title">My Profile</h3>
  </div>
 
- <table>
+ <table class="profile-table">
   
   <tr>
     <td> <b>Name</b></td>
@@ -80,7 +82,7 @@ td, th {
 </table>
 <br>
 
-<p align="center"> <a href="./edit-profile.php">Edit</a> </p>
+<p align="center"> <a href="./edit-profile-customer.php">Edit</a> </p>
 
 
   <?php include_once 'footer.php' ?>

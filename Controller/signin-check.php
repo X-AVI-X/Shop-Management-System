@@ -16,13 +16,13 @@ if (isset($_POST['submit']))
         $uname = $_POST["uname"];
         $password = $_POST["password"]; 
         
-        if(login($uname, $password))
+        if(login($uname, md5($password)))
         {
             $success = "Login successful";
                 $_SESSION['uname'] = $uname;
                 $_SESSION['password'] = $password;
                 $_SESSION['name'] = $_SESSION['row']['name'];
-                header("location:home.php");
+                header("location:home-customer.php");
                 if(empty($success))
                 {
                     $error = "Invalid username/password";

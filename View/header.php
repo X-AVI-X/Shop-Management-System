@@ -8,7 +8,8 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>header</title>
+	<link rel="stylesheet" href="../style.css">
+	<title>E-shop.com</title>
 </head>
 <body>
 	<div style="width: 100% ; background-color:white;">
@@ -16,20 +17,21 @@
 			<h1>E-Shop.com</h1> <hr>
 		</div>
 		<fieldset>
-			<div style="padding-left: 12px;  margin: 2px;"> 
-				<a href="../View/home.php">Home</a>
-				<a href="../View/history.php">History</a>
-				<a href="../View/profile.php">Profile</a>
+			<div class="header"> 
+				<a href="../View/home-customer.php">Home</a>
+				<a href="../View/history-customer.php">History</a>
+				<a href="../View/profile-customer.php">Profile</a>
 			</div>
 
-			<div align="right" style="padding-bottom:  15px;">
+			<div class="searchbox">
 				<?php include_once '../View/search-product.php' ?>
 			</div>
 
 			<div align="right">
-				Welcome <?php echo $_SESSION['name']?><a href="logout.php">|Log-out</a>
+				Welcome, <?php echo $_SESSION['name']?><a href="logout.php">|Log-out</a>
 			</div>
 		</fieldset>
 	</div>
 </body>
 </html>
+<?php echo "<br>"; ?>

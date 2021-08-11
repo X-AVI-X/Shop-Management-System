@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Search | E-shop.com</title>
 	<style>
 		table,td,th{
 			border:1px solid black;

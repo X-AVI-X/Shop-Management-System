@@ -9,7 +9,7 @@ $product = fetchProduct($_GET['id']);
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Show Product | E-shop.com</title>
 </head>
 <body>
 

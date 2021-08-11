@@ -53,5 +53,27 @@
         "paddress": "Dhaka",
         "city": "dhaka",
         "phone": "01848364734"
+    },
+    {
+        "name": "Avijit Paul",
+        "e-mail": "avi@gmail.com",
+        "username": "avi",
+        "password": "1234567@",
+        "gender": "Male",
+        "peraddress": "Dhaka",
+        "paddress": "Rangpur",
+        "city": "dhaka",
+        "phone": "01294893874"
+    },
+    {
+        "name": "John Nash",
+        "e-mail": "john@gmail.com",
+        "username": "john",
+        "password": "1234567@",
+        "gender": "Male",
+        "peraddress": "Dhaka",
+        "paddress": "Rangpur",
+        "city": "",
+        "phone": "0183849234"
     }
 ]

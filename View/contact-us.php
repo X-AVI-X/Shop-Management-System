@@ -3,11 +3,12 @@
 <head>
 	<title>Contact us</title>
   <?php include_once 'header.php' ?>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
  <div>
- 	   <h3 style="color: red; background-color: yellow;" align="center">Contact us</h3>
+ 	   <h3 class="title">Contact us</h3>
  </div>
 
  <table>
