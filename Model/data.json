@@ -75,5 +75,27 @@
         "paddress": "Rangpur",
         "city": "",
         "phone": "0183849234"
+    },
+    {
+        "name": "John Nash",
+        "e-mail": "john@gmail.com",
+        "username": "john",
+        "password": "3275774623",
+        "gender": "Female",
+        "peraddress": "Dhaka",
+        "paddress": "Rangpur",
+        "city": "dhaka",
+        "phone": "0183849234"
+    },
+    {
+        "name": "John Nash",
+        "e-mail": "john@gmail.com",
+        "username": "john",
+        "password": "1111111@",
+        "gender": "Female",
+        "peraddress": "Dhaka",
+        "paddress": "Rangpur",
+        "city": "mymensingh",
+        "phone": "0134535335"
     }
 ]

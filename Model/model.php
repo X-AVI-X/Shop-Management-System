@@ -122,3 +122,19 @@ VALUES (:uname, :name, :gender, :city, :paddress, :peraddress, :phone, :password
     $conn = null;
     return true;
 }
+
+function updateProfile($uname, $data){
+    $conn = db_conn();
+    $selectQuery = "UPDATE user_info set name = ?, gender = ?, city = ?, paddress = ?, peraddress = ?, phone = ?, password = ?, email = ? where uname = ?";
+    try{
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([
+             $data['name'], $data['gender'], $data['city'], $data['paddress'], $data['peraddress'], $data['phone'], $data['password'], $data['email'], 'john'
+        ]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+    
+    $conn = null;
+    return true;
+}
