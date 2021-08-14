@@ -102,7 +102,7 @@ if (isset($_POST['submit']))
         }
         else
         {
-            $cpasswordErr = "Password and confirm passward did not match";
+            $cpasswordErr = "Password and confirm password did not match";
             $password = "";
             $cpassword= "";
         }

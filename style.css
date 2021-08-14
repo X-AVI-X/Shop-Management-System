@@ -1,3 +1,7 @@
+a, a:visited, a:focused {
+    text-decoration: none;
+    color: inherit;
+  }
 
 .error {
     color: red;

@@ -33,7 +33,7 @@ td, th {
 <body>
  
  <div>
- 	   <h3 class="title">My Profile</h3>
+ 	   <h3 class="title">Edit Profile</h3>
  </div>
 
  <form action="./edit-profile-customer.php" id="reg-form" method="POST" autocomplete="off" novalidate>

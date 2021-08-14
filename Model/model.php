@@ -129,7 +129,7 @@ function updateProfile($uname, $data){
     try{
         $stmt = $conn->prepare($selectQuery);
         $stmt->execute([
-             $data['name'], $data['gender'], $data['city'], $data['paddress'], $data['peraddress'], $data['phone'], $data['password'], $data['email'], 'john'
+             $data['name'], $data['gender'], $data['city'], $data['paddress'], $data['peraddress'], $data['phone'], $data['password'], $data['email'], $uname
         ]);
     }catch(PDOException $e){
         echo $e->getMessage();
