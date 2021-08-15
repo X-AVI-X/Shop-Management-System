@@ -191,10 +191,26 @@ function removeFromCart ($id)
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $rows = $stmt->fetch(PDO::FETCH_ASSOC);
     //echo "Var dump of rows: ";
     if($rows)
     {
         return true;
     } else return false;
+}
+
+function forgetPass($email, $password){
+    $conn = db_conn();
+    $selectQuery = "UPDATE user_info set password = ? where email = ?";
+    try{
+        $stmt = $conn->prepare($selectQuery);
+        $stmt->execute([
+            $email, $password
+        ]);
+    }catch(PDOException $e){
+        echo $e->getMessage();
+    }
+    
+    $conn = null;
+    return true;
 }

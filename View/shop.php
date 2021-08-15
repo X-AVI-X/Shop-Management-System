@@ -94,7 +94,7 @@
 		$(document).ready(function(){
 			function loadData(page){
 			$.ajax({
-				url  : "../Controller/pagination.php",
+				url  : "../Controller/shop-pagination.php",
 				type : "POST",
 				cache: false,
 				data : {page_no:page},

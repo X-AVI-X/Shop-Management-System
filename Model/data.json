@@ -97,5 +97,16 @@
         "paddress": "Rangpur",
         "city": "mymensingh",
         "phone": "0134535335"
+    },
+    {
+        "name": "Avijit Paul",
+        "e-mail": "avi@gmail.com",
+        "username": "avi",
+        "password": "1234567@",
+        "gender": "Male",
+        "peraddress": "Rangpur",
+        "paddress": "43\/F, Road- 4, D-block, Bashundhara",
+        "city": "dhaka",
+        "phone": "01732093472"
     }
 ]

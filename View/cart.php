@@ -47,7 +47,9 @@
  </div>
  <label for="myInput">Live Search</label>
  <input id="myInput" type="text" placeholder="Search..">
-<br><br>
+ <p style="color:#42b9cf;font-size:20px;">Products will be delivered the present address you provided in your profile.<br>
+Payment system: <b> Cash on delivery </b>
+</p>
 
  <table>
 	<thead>

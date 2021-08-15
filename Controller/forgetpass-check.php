@@ -1,4 +1,5 @@
 <?php
+require_once ('../Model/model.php');
 $emailErr = $passwordErr = $cpasswordErr = $error = "";
 $email  = $password = $cpassword = $success = "";
 
@@ -10,6 +11,7 @@ if (isset($_POST['submit'])) {
     else 
     {
         $email = $_POST["email"];
+
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
         {
             $emailErr = "Invalid email format";
@@ -50,6 +52,19 @@ if (isset($_POST['submit'])) {
             $cpassword= "";
         }
     }
+
+    if (empty($email) || empty($password) || empty($cpassword))
+    {
+
+    }
+    else
+    {
+        if(forgetPass($email, md5($password)))
+        {
+            echo "<h3> Password reset successfully! </h3";
+        }
+    }
+    
 
 }
 ?>
