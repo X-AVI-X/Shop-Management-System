@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Avijit Paul",
+        "e-mail": "Avijit@gmail.com",
+        "username": "Avi",
+        "password": "1234567@",
+        "gender": "male",
+        "peraddress": "New Senpara, Rangpur",
+        "paddress": "Banani, Dhaka",
+        "city": "Dhaka",
+        "phone": "0171000000"
+    },
+    {
+        "name": "Sadia Islam",
+        "e-mail": "sadiaobaed6969@gmail.com",
+        "username": "sadia",
+        "password": "1234567@",
+        "gender": "Female",
+        "peraddress": "Bogura",
+        "paddress": "Bogura",
+        "city": "Bogura",
+        "phone": "0179480000"
+    },
+    {
+        "name": "Sadia Obaed",
+        "e-mail": "sadiaobaed6969@gmail.com",
+        "username": "sadi",
+        "password": "12345678!",
+        "gender": "Female",
+        "peraddress": "Dhaka",
+        "paddress": "Dhaka",
+        "city": "Dhaka",
+        "phone": "0172900876"
+    },
+    {
+        "name": "Sadia Islam",
+        "e-mail": "sadiaobaed6969@gmail.com",
+        "username": "sadi",
+        "password": "12345678@",
+        "gender": "Female",
+        "peraddress": "Bogura",
+        "paddress": "Bogura",
+        "city": "Bogura",
+        "phone": "0179480033"
+    },
+    {
+        "name": "jishan ahmed",
+        "e-mail": "jishan@gmail.com",
+        "username": "jishu",
+        "password": "1234567@@",
+        "gender": "Male",
+        "peraddress": "Dhaka",
+        "paddress": "Dhaka",
+        "city": "Dhaka",
+        "phone": "0172900816"
+    },
+    {
+        "name": "Sadia Obaed",
+        "e-mail": "sadiaobaed6969@gmail.com",
+        "username": "sadia_12",
+        "password": "1234567@@",
+        "gender": "Female",
+        "peraddress": "Bogra",
+        "paddress": "Bogra",
+        "city": "Bogra",
+        "phone": "0179480222"
+    },
+    {
+        "name": "Shushoma Afrin",
+        "e-mail": "Retina@gmail.com",
+        "username": "retina12",
+        "password": "1234567@@",
+        "gender": "Female",
+        "peraddress": "Dhaka",
+        "paddress": "Dhaka",
+        "city": "dhaka",
+        "phone": "01278755657"
+    },
+    {
+        "name": "Sadia Islam",
+        "e-mail": "sadiaobaed6969@gmail.com",
+        "username": "sadia",
+        "password": "1234567@@",
+        "gender": "Female",
+        "peraddress": "Bogura",
+        "paddress": "Bogura",
+        "city": "dhaka",
+        "phone": "0179480000"
+    }
+]
