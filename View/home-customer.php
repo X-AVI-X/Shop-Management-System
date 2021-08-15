@@ -5,6 +5,9 @@
    <title>E-Shop.com</title>
 
    <?php include_once 'header.php' ?>
+   <style src='../style.css'>
+</style>
+
 
 </head>
 
@@ -17,7 +20,7 @@
             <ul>
                <li><a href="../View/home-customer.php">Home</a></li>
                <li><a href="./shop.php">Shop | Browse Items</a></li>
-               <li><a href="./cart.php">Cart</a></li>
+               <li><a href="./cart.php">Orders</a></li>
                <li><a href="./contact-us.php">Contact us</a></li>
              <!--  <li><a href="#">Phone</a></li>
                <li><a href="#">Order</a></li>

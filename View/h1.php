@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<div style="width: 100% ; background-color:white;">
+	<div style="width: 100%;">
 		<div style="color:gray;"  align="center" >
 	<h1>E-Shop.com</h1> <hr></div>
 

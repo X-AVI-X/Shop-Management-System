@@ -25,7 +25,7 @@ $product = fetchProduct($_GET['id']);
 		<td><?php echo $product['ID'] ?></td>
 		<td><a href="show-product.php?id=<?php echo $product['ID'] ?>"><?php echo $product['Name'] ?></a></td>
 		<td><?php echo $product['Sell_Price'] ?></td>
-		<td><img width="100px" src="uploads/<?php echo $product['image'] ?>" alt="<?php echo $product['Name'] ?>"></td>
+		<td><img width="100px" src="../Upload/Products/<?php echo $product['image'] ?>" alt="<?php echo $product['Name'] ?>"></td>
 	</tr>
 
 </table>

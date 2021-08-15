@@ -1,5 +1,5 @@
 <?php      
-    include('connection.php');  
+    require_once ('connection.php');  
         
     function login($username, $password)
     {
@@ -25,4 +25,15 @@
             return false; 
         }
     }
+
+    // function showCart ()
+    // {
+    //     $conn = my_conn();
+    //     $query= "SELECT * FROM cart";
+    //     $result = mysqli_query($conn, $query);
+    //     $row=mysqli_fetch_assoc($result); 
+    //     var_dump($row);
+    //     return $row;
+    // }
+
 ?>  

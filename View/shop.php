@@ -43,6 +43,7 @@
 <div>
  	   <h3 style="color: red; background-color: yellow;" align="center">Shop</h3>
  </div>
+ <label for="myInput">Live Search</label>
  <input id="myInput" type="text" placeholder="Search..">
 <br><br>
 

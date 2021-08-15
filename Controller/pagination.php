@@ -44,8 +44,8 @@
                         <td>{$row['ID']}</td>
                         <td>{$row['Name']}</td>
                         <td>{$row['Sell_Price']}</td>
-                        <td><img width='100px' src='../Upload/{$row['image']}' alt='{$row['Name']}'> </td>
-				        <td><a href='add-to-cart.php?id={$row['ID']}' >Add to cart</td>
+                        <td><img width='100px' src='../Upload/Products/{$row['image']}' alt='{$row['Name']}'> </td>
+				        <td><a href='../Controller/add-to-cart.php?id={$row['ID']}' >Order now</td>
                     </tr>";
         } 
         $output.="</tbody>
